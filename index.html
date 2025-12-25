@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telangana Schemes Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-area" id="adminTrigger">
+                <div class="logo-circle">
+                    <i class="fas fa-landmark"></i> </div>
+                <div class="title-text">
+                    <h1>Telangana Info Portal</h1>
+                    <p>Government Schemes & Updates</p>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search schemes..." onkeyup="searchSchemes()">
+            </div>
+        </div>
+    </header>
+
+    <div class="ad-wrapper">
+        <div class="ad-container banner-ad">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '662d624c17b504901208ce8544f70406',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/662d624c17b504901208ce8544f70406/invoke.js"></script>
+        </div>
+    </div>
+
+    <main id="schemesContainer">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+    </main>
+
+    <div class="ad-wrapper">
+        <div class="ad-container native-ad">
+            <div id="container-bf4605ad5ef44dd961a8728b870393d2"></div>
+            <script async="async" data-cfasync="false" src="https://pl28325905.effectivegatecpm.com/bf4605ad5ef44dd961a8728b870393d2/invoke.js"></script>
+        </div>
+    </div>
+
+    <div id="adminPanel" class="admin-overlay hidden">
+        <div class="admin-modal">
+            <button class="close-btn" onclick="toggleAdmin()"><i class="fas fa-times"></i></button>
+            
+            <div id="loginSection" class="fade-in">
+                <div class="admin-icon"><i class="fas fa-user-shield"></i></div>
+                <h2>Admin Login</h2>
+                <input type="password" id="adminPassInput" placeholder="Enter Password">
+                <button class="action-btn" onclick="verifyAdmin()">Login & Manage</button>
+            </div>
+
+            <div id="dashboardSection" class="hidden fade-in">
+                <div class="dash-header">
+                    <h2>Publish Update</h2>
+                    <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+                
+                <form id="addSchemeForm">
+                    <div class="input-group">
+                        <input type="text" id="sTitle" placeholder="Scheme Title" required>
+                    </div>
+                    <textarea id="sDesc" placeholder="Full Description" required></textarea>
+                    
+                    <div class="grid-2">
+                        <input type="text" id="sEligible" placeholder="Eligibility">
+                        <input type="text" id="sBenefits" placeholder="Benefits">
+                    </div>
+                    
+                    <input type="text" id="sDocs" placeholder="Required Documents">
+                    <input type="text" id="sLink" placeholder="Link (http://...)">
+                    <input type="text" id="sImage" placeholder="Image URL (Optional)">
+                    
+                    <button type="submit" class="action-btn publish-btn">Post Update</button>
+                </form>
+
+                <div class="admin-footer">
+                    <span onclick="showChangePass()">Change Password</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='//pl28325896.effectivegatecpm.com/0d/c8/74/0dc874f5dd64527231ea5200d7597202.js'></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
